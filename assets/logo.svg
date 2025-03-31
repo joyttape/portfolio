@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.67 212.83">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        font-family: Constantia-Bold, Constantia;
+        font-size: 194.42px;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #0540f2;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <text class="cls-2" transform="translate(3.84 163.94)"><tspan x="0" y="0">J</tspan><tspan class="cls-1" x="70.63" y="0">p</tspan></text>
+    <path class="cls-3" d="M149.56,124.08c-11.46-1.08-12.76-.24-16.49,10.66,1.08-11.46.24-12.76-10.66-16.49,11.46,1.08,12.76.24,16.49-10.66-1.08,11.46-.24,12.76,10.66,16.49Z"/>
+  </g>
+</svg>
