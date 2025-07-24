@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling para links de navegação
     const navLinks = document.querySelectorAll('.menu');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Menu mobile toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.conteudo_cabecalho ul');
     
@@ -27,15 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Filtros da galeria
     const filterButtons = document.querySelectorAll('.filter-btn');
     const galleryItems = document.querySelectorAll('.gallery-item');
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
 
             const filterValue = this.getAttribute('data-filter');
@@ -67,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Modal para imagens da galeria
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     const modalCaption = document.getElementById('modalCaption');
@@ -92,28 +86,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Fechar modal clicando fora da imagem
     modal.addEventListener('click', function(e) {
         if (e.target === modal) {
             modal.style.display = 'none';
         }
     });
 
-    // Modal de Preços
     const precosModal = document.getElementById('precosModal');
     const precosBtns = document.querySelectorAll('#precos-btn, #precos-hero-btn');
     const closePrecosModal = document.querySelector('.close-precos');
 
-    // Abrir modal de preços
     precosBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             precosModal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Previne scroll do body
+            document.body.style.overflow = 'hidden'; 
         });
     });
 
-    // Fechar modal de preços
     if (closePrecosModal) {
         closePrecosModal.addEventListener('click', function() {
             precosModal.style.display = 'none';
@@ -121,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Fechar modal de preços clicando fora
     precosModal.addEventListener('click', function(e) {
         if (e.target === precosModal) {
             precosModal.style.display = 'none';
@@ -129,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Botão de contato no modal de preços
     const btnContatoPrecos = document.querySelector('.btn-contato-precos');
     if (btnContatoPrecos) {
         btnContatoPrecos.addEventListener('click', function(e) {
@@ -137,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
             precosModal.style.display = 'none';
             document.body.style.overflow = 'auto';
             
-            // Scroll para seção de contato
             const contatoSection = document.querySelector('#contato');
             if (contatoSection) {
                 contatoSection.scrollIntoView({
@@ -147,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Animação das barras de habilidade
     const skillBars = document.querySelectorAll('.skill-progress');
     const observerOptions = {
         threshold: 0.5,
@@ -168,7 +154,6 @@ document.addEventListener('DOMContentLoaded', function() {
         skillObserver.observe(bar);
     });
 
-    // Animação de entrada para elementos
     const animatedElements = document.querySelectorAll('.gallery-item, .projeto-card, .contato-item, .cert-item, .timeline-item');
     
     const elementObserver = new IntersectionObserver(function(entries) {
@@ -186,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
         elementObserver.observe(element);
     });
 
-    // Header background change on scroll
     const header = document.querySelector('.cabecalho');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
@@ -198,13 +182,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Formulário de contato
     const contactForm = document.querySelector('.contato-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Simular envio do formulário
             const submitBtn = this.querySelector('.btn-primary');
             const originalText = submitBtn.textContent;
             
@@ -225,7 +207,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Parallax effect para hero section
     const hero = document.querySelector('.hero');
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
@@ -236,7 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Typing effect para hero title
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
         const text = heroTitle.textContent;
