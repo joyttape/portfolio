@@ -3,99 +3,487 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>João Pedro - Portfólio</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="assets/logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
     <header class="cabecalho">
         <nav class="conteudo_cabecalho">
             <ul>
-                <li><a class= "menu" href="index.html">Portfólio</a></li>
-                <li><a class= "menu" href="pag2.html">Form</a></li>
+                <li><a class="menu" href="#inicio">Início</a></li>
+                <li><a class="menu" href="#sobre">Sobre</a></li>
+                <li><a class="menu" href="#galeria">Galeria</a></li>
+                <li><a class="menu" href="#habilidades">Habilidades</a></li>
+                <li><a class="menu" href="#contato">Contato</a></li>
+                <li><a class="menu" href="#" id="precos-btn">Preços</a></li>
             </ul>
         </nav>
+        <div class="menu-mobile">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
-</header>
-<main>
-    <div class="centro">
-        <img src="assets/index_2.svg" class="imagem_inicio">
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">João Pedro</h1>
+                <p class="hero-subtitle">Designer UX/UI & Desenvolvedor Front-end</p>
+                <p class="hero-description">Criando experiências digitais únicas através do design e código</p>
+                <div class="hero-buttons">
+                    <a href="#galeria" class="btn-primary">Ver Portfólio</a>
+                    <a href="#contato" class="btn-secondary">Contato</a>
+                    <button class="btn-precos" id="precos-hero-btn">Ver Preços</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="conteudo">
+            <div class="container">
+                <div class="texto">
+                    <div class="sobre-header">
+                        <h2>Sobre Mim</h2>
+                        <div class="linha-decorativa"></div>
+                    </div>
+                    <p class="texto1">Meu nome é João Pedro, tenho 20 anos e moro no munícipio Jaru localizado no estado de Rondônia. 
+                        Desde sempre tive interesse na área de informática, especialmente no campo do design de experiência de usuário (UX) e 
+                        desenvolvimento front-end. Explorar ferramentas, linguagens e conceitos nesse âmbito tem sido uma paixão constante para mim. 
+                        Através dessa jornada, tenho buscado aprimorar minhas habilidades e expandir meu conhecimento.</p>              
+                </div>
+        
+                <div class="foto_redes">
+                    <div class="foto-container">
+                        <img src="assets/foto_eu.jpg" alt="João Pedro" class="foto-perfil">
+                    </div>
+                    <div class="info">
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <p class="eu">Rondônia, Brasil</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <p class="eu">joaopedrogundimg@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📱</span>
+                            <p class="eu">@jottapedros</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">💻</span>
+                            <p><a href="https://github.com/joyttape" class="eu">github.com/joyttape</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galeria de Artes</h2>
+                    <p class="section-subtitle">Trabalhos desenvolvidos em Photoshop</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="Photoshop">
+                        <img src="assets/designs/campanhamaes.jpg" alt="Arte Digital 1">
+                        <div class="gallery-overlay">
+                            <h3>Design Gráfico</h3>
+                            <p>Hingria Modas</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="Illustrator">
+                        <img src="assets/designs/logoselene.jpg" alt="Arte Digital 2">
+                        <div class="gallery-overlay">
+                            <h3>Design Gráfico</h3>
+                            <p>Logo - Selene Crochê</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="Photoshop">
+                        <img src="assets/designs/Portfólio1.png" alt="Arte Digital 3">
+                        <div class="gallery-overlay">
+                            <h3>Arte empresa Ficticia</h3>
+                            <p>Feito por hobby.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="Photoshop">
+                        <img src="assets/designs/diadasmulheres.jpg" alt="Arte Digital 4">
+                        <div class="gallery-overlay">
+                            <h3>Sorteio dia das Mulheres</h3>
+                            <p>Hingria Modas</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="Photoshop">
+                        <img src="assets/designs/BigBite - Design.png" alt="Arte Digital 5">
+                        <div class="gallery-overlay">
+                            <h3>Arte empresa Ficticia</h3>
+                            <p>Feito para um projeto da Faculdade.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="Illustrator">
+                        <img src="assets/designs/logo (1).png" alt="Arte Digital 6">
+                        <div class="gallery-overlay">
+                            <h3>Logo empresa Ficticia</h3>
+                            <p>Feito para um projeto da Faculdade.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="Photoshop">
+                        <img src="assets/designs/Agatha.png" alt="Arte Digital 7">
+                        <div class="gallery-overlay">
+                            <h3>Arte empresa Ficticia</h3>
+                            <p>Feito para um projeto da Faculdade.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="Illustrator">
+                        <img src="assets/designs/petselene.jpg" alt="Arte Digital 8">
+                        <div class="gallery-overlay">
+                            <h3>Design Gráfico</h3>
+                            <p>Icone - Selene Crochê</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="Photoshop">
+                        <img src="assets/designs/PortFólio5.png" alt="Arte Digital 9">
+                        <div class="gallery-overlay">
+                            <h3>Arte empresa Ficticia</h3>
+                            <p>Feito por hobby.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="Illustrator">
+                        <img src="assets/designs/tooki.png" alt="Arte Digital 10">
+                        <div class="gallery-overlay">
+                            <h3>Arte empresa Ficticia</h3>
+                            <p>Feito para um projeto da Faculdade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="Photoshop">Photoshop</button>
+                    <button class="filter-btn" data-filter="Illustrator">Illustrator</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="atividades">
+            <div class="container">
+                <div class="skills-grid">
+                    <div class="hab">
+                        <h2>HABILIDADES TÉCNICAS EM PROGRESSO</h2>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Adobe Photoshop</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Adobe Illustrator</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Figma</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2>EXPERIÊNCIAS</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Jun 2024 - Atual</div>
+                                <div class="timeline-content">
+                                    <h3>Estágio de Informática</h3>
+                                    <h4>Tribunal de Justiça de Rondônia - Comarca de Jaru</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Set 2023 - Ago 2024</div>
+                                <div class="timeline-content">
+                                    <h3>Projeto de Pesquisa</h3>
+                                    <h4>Estação Meteorológica com Raspberry Pi</h4>
+                                    <p>Monitoramento climático para tomada de decisões</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Freelancer</div>
+                                <div class="timeline-content">
+                                    <h3>Designer Gráfico</h3>
+                                    <h4>Desenvolvimento de designs, logos e identidade visual</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formacao">
+                        <h2>FORMAÇÃO ACADÊMICA</h2>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <h3>IFRO - Instituto Federal de Rondônia</h3>
+                                <div class="education-details">
+                                    <h4>Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
+                                    <span class="education-period">Fev 2023 - Atual</span>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Técnico em Alimentos (Integrado ao Ensino Médio)</h4>
+                                    <span class="education-period">Fev 2020 - Dez 2022</span>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <h3>E.E.F.M OLGA DELLAIA</h3>
+                                <div class="education-details">
+                                    <h4>Ensino Fundamental</h4>
+                                    <span class="education-period">Fev 2010 - Nov 2019</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h2>CERTIFICAÇÕES</h2>
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <div class="cert-info">
+                                    <h4>C#: aplicando a Orientação a Objetos</h4>
+                                    <p>Alura</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <div class="cert-info">
+                                    <h4>UI Design: mergulhando nas interfaces digitais</h4>
+                                    <p>Alura</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <div class="cert-info">
+                                    <h4>HTML e CSS: trabalhando com responsividade e publicação de projetos</h4>
+                                    <p>Alura</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <div class="cert-info">
+                                    <h4>UX Design: entenda a área da User Experience</h4>
+                                    <p>Alura</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <div class="cert-info">
+                                    <h4>Adobe Photoshop: composição de imagens</h4>
+                                    <p>Alura</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projetos em Destaque</h2>
+                    <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
+                </div>
+                
+                <div class="projetos-grid">
+                    <div class="projeto-card">
+                        <div class="projeto-image">
+                            <div class="projeto-placeholder">
+                                <span>BigBite Project</span>
+                            </div>
+                        </div>
+                        <div class="projeto-content">
+                            <h3>BigBite - Sistema de Delivery</h3>
+                            <p>Desenvolvimento de interface para sistema de delivery de alimentos com foco na experiência do usuário.</p>
+                            <div class="projeto-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">UX/UI</span>
+                            </div>
+                            <a href="https://joyttape.github.io/BigBite_ADS_JP/" class="projeto-link" target="_blank">Ver Projeto</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vamos Trabalhar Juntos?</h2>
+                    <p class="section-subtitle">Entre em contato para discutir seu próximo projeto</p>
+                </div>
+                
+                <div class="contato-content">
+                    <div class="contato-info">
+                        <div class="contato-item">
+                            <span class="contato-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>joaopedrogundimg@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">📱</span>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@jottapedros</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">💻</span>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/joyttape</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">📍</span>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Jaru, Rondônia - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 João Pedro Gundim Guimarães. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/joyttape" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/jottapedros" target="_blank">Instagram</a>
+                <a href="mailto:joaopedrogundimg@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
     </div>
 
-    <section class="conteudo">
-            <div class="texto">
-                <div class="imgs">
-                    <img class="img_ola"   src="assets/foto_ola_1.svg">
-                    <img class="img_ola" src="assets/linha.svg">
-                </div>
-                <p class="texto1">Meu nome é João Pedro, tenho 20 anos e moro no munícipio Jaru localizado no estado de Rondônia. 
-                    Desde sempre tive interesse na área de informática, especialmente no campo do design de experiência de usuário (UX) e 
-                    desenvolvimento front-end. Explorar ferramentas, linguagens e conceitos nesse âmbito tem sido uma paixão constante para mim. 
-                    Através dessa jornada, tenho buscado aprimorar minhas habilidades e expandir meu conhecimento</p>
-                <a href="https://joyttape.github.io/BigBite_ADS_JP/" class="projeto">Projeto 1</a>
+    <div id="precosModal" class="modal precos-modal">
+        <div class="modal-content-precos">
+            <span class="close-precos">&times;</span>
+            <div class="precos-header">
+                <h2>Tabela de Preços - Design Gráfico</h2>
+                <p>Pacotes personalizados para suas necessidades</p>
+                <p>A cada arte por favor entrar em contato com antecedência!</p>
             </div>
-    
-            <div class="foto_redes">
-                <img class="foto_eu" src="assets/foto_eu.jpg">
-                <div class="info">
-                    <div>
-                        <img src="assets/localizacao.svg">
-                        <p class="eu">Rondônia</p>
+            <div class="precos-grid">
+                <div class="preco-card">
+                    <div class="preco-header">
+                        <h3>1 Design</h3>
+                        <div class="preco-valor">
+                            <span class="valor">R$ 50</span>
+                            <span class="periodo">,00</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/insta_1.svg">
-                        <p class="eu">@jottapedros</p>
+                    <ul class="preco-features">
+                        <li>✓ 1 Arte personalizada</li>
+                        <li>✓ Até 2 revisões</li>
+                        <li>✓ Arquivos em alta resolução</li>
+                    </ul>
+                </div>
+                
+                <div class="preco-card destaque">
+                    <div class="badge">Mais Popular</div>
+                    <div class="preco-header">
+                        <h3>Pacote 5 Designs</h3>
+                        <div class="preco-valor">
+                            <span class="valor">R$ 200</span>
+                            <span class="periodo">,00</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/email.svg">
-                        <p class="eu">joaopedrogundimg@gmail.com</p>
+                    <ul class="preco-features">
+                        <li>✓ 5 Artes personalizadas</li>
+                        <li>✓ Até 3 revisões por arte</li>
+                        <li>✓ Arquivos em alta resolução</li>
+                    </ul>
+                </div>
+                
+                <div class="preco-card">
+                    <div class="preco-header">
+                        <h3>Pacote 10 Designs</h3>
+                        <div class="preco-valor">
+                            <span class="valor">R$ 350</span>
+                            <span class="periodo">,00</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/github.svg">
-                        <p><a href="https://github.com/joyttape" class="eu"> github</a></p>
+                    <ul class="preco-features">
+                        <li>✓ 10 Artes personalizadas</li>
+                        <li>✓ Até 3 revisões por arte</li>
+                        <li>✓ Arquivos em alta resolução</li>
+                    </ul>
+                </div>
+                
+                <div class="preco-card premium">
+                    <div class="badge premium-badge">Premium</div>
+                    <div class="preco-header">
+                        <h3>Pacote 20 Designs</h3>
+                        <div class="preco-valor">
+                            <span class="valor">R$ 500</span>
+                            <span class="periodo">,00</span>
+                        </div>
                     </div>
+                    <ul class="preco-features">
+                        <li>✓ 20 Artes personalizadas</li>
+                        <li>✓ Revisões ilimitadas</li>
+                        <li>✓ Arquivos em alta resolução</li>
+                    </ul>
                 </div>
             </div>
-    </section>
-    <section class="atividades">
-        <div class="hab">
-            <h2>HABILIDADES</h2>
-            <ul>
-                <li>Illustrator</li>
-                <li>Photoshop</li>
-                <li>HTML/CSS</li>
-                <li>Figma</li>
-                <li>C#</li>
-                <li>MYSQL</li>
-            </ul>
-            
-            <p></p>
-            <h2>EXPERIÊNCIAS</h2>
-            <h4>Setembro, 2023 - Agosto, 2024</h4>
-            <h3>Projeto de Pesquisa: Estação Meteorológica: Monitorando o Clima com Raspberry Pi para Tomada de Decisões</h3>
-
-            <h4>Junho, 2024 - Atualmente</h4>
-            <h3>Estágio de Informática no Tribunal de Justiça de Rondônia - Comarca de Jaru</h3>
-
-            <h4>Freelancer</h4>
-            <h3>Desenvolvimento de designs, logos e identificação visual.</h3>
+            <div class="precos-footer">
+                <p>💬 Entre em contato para orçamentos personalizados</p>
+                <a href="#contato" class="btn-contato-precos">Solicitar Orçamento</a>
+            </div>
         </div>
+    </div>
 
-        <div class="formacao">
-
-        <h2>FORMAÇÃO</h2>
-        <h3>IFRO (Instituto Federal de Educação, Ciência e Tecnologia de Rondônia)</h2>
-        <h4>Curso Superior de Tecnologia, Análise e Desenvolvimento de Sistemas · (fevereiro de 2023 - Atualmente)</h4>
-        <h4>Curso Técnico Integrado ao Ensino-Médio, Técnico em Alimentos · (fevereiro de 2020 - dezembro de 2022)</h4>
-
-        <h3>E.E.F.M OLGA DELLAIA</h2>
-        <h4>Ensino Fundamental · (fevereiro de 2010 - novembro de 2019)</h4>
-        </div>
-    </section>
-</main>
-<footer>
-<p>João Pedro Gundim Guimarães</p>
-</footer>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
